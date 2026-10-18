@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Design Academy — Learn by Playing</title>
+  <meta name="description" content="An interactive course that teaches system design through explanations, architecture diagrams, and playable simulations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <a class="brand" href="#/" data-nav>
+      <span class="brand-mark">⬡</span>
+      <span class="brand-text">System Design <strong>Academy</strong></span>
+    </a>
+    <nav class="topnav">
+      <a href="#/" data-nav>Home</a>
+      <a href="#/areas" data-nav>Curriculum</a>
+      <button id="progressReset" class="ghost-btn" title="Reset your progress">Reset progress</button>
+    </nav>
+    <div class="topbar-progress">
+      <div class="mini-ring" id="miniRing">
+        <svg viewBox="0 0 36 36">
+          <circle class="mini-ring-bg" cx="18" cy="18" r="15.9" />
+          <circle class="mini-ring-fg" id="miniRingFg" cx="18" cy="18" r="15.9" />
+        </svg>
+        <span id="miniRingText">0%</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- App mounts here -->
+  <main id="app" class="app"></main>
+
+  <footer class="site-footer">
+    <span>Built as an interactive, open learning project · Pure HTML/CSS/JS · No build step</span>
+  </footer>
+
+  <!-- Core -->
+  <script src="js/engine.js"></script>
+  <script src="js/diagram.js"></script>
+
+  <!-- Concept modules: Area 1 -->
+  <script src="js/concepts/loadBalancing.js"></script>
+  <script src="js/concepts/caching.js"></script>
+  <script src="js/concepts/replication.js"></script>
+  <script src="js/concepts/sharding.js"></script>
+  <script src="js/concepts/rateLimiting.js"></script>
+  <script src="js/concepts/faultTolerance.js"></script>
+
+  <!-- Area 2 -->
+  <script src="js/concepts/httpHttps.js"></script>
+  <script src="js/concepts/rest.js"></script>
+  <script src="js/concepts/grpc.js"></script>
+  <script src="js/concepts/websockets.js"></script>
+  <script src="js/concepts/messageQueues.js"></script>
+  <script src="js/concepts/eventDriven.js"></script>
+
+  <!-- Area 3 -->
+  <script src="js/concepts/sqlNosql.js"></script>
+  <script src="js/concepts/indexing.js"></script>
+  <script src="js/concepts/transactions.js"></script>
+  <script src="js/concepts/dataReplication.js"></script>
+  <script src="js/concepts/dataSharding.js"></script>
+  <script src="js/concepts/consistency.js"></script>
+
+  <!-- Area 4 -->
+  <script src="js/concepts/authentication.js"></script>
+  <script src="js/concepts/authorization.js"></script>
+  <script src="js/concepts/sessions.js"></script>
+  <script src="js/concepts/rbac.js"></script>
+  <script src="js/concepts/logging.js"></script>
+  <script src="js/concepts/metrics.js"></script>
+  <script src="js/concepts/tracing.js"></script>
+
+  <!-- Area 5 -->
+  <script src="js/concepts/monolith.js"></script>
+  <script src="js/concepts/microservices.js"></script>
+  <script src="js/concepts/modularMonolith.js"></script>
+  <script src="js/concepts/apiGateway.js"></script>
+  <script src="js/concepts/serviceDiscovery.js"></script>
+  <script src="js/concepts/looseCoupling.js"></script>
+
+  <!-- Area 6 -->
+  <script src="js/concepts/cicd.js"></script>
+  <script src="js/concepts/iac.js"></script>
+  <script src="js/concepts/docker.js"></script>
+  <script src="js/concepts/kubernetes.js"></script>
+  <script src="js/concepts/serverless.js"></script>
+  <script src="js/concepts/disasterRecovery.js"></script>
+
+  <!-- Registry + App last -->
+  <script src="js/registry.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
